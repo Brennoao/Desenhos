@@ -1,0 +1,15 @@
+*, *::before, *::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --background: #1f1d1d;
+    --red: #e50913;
+    --red-dark: #b20510;
+
+}
