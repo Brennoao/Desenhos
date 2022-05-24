@@ -1,0 +1,73 @@
+/* BACKGROUND */
+
+/* DEGRADÊ BACKGROUND PRIMEIRA PARTE */
+
+.Container {
+
+    width: 486px;
+    height: 486px;
+    border-radius: 35%;
+    background-image: radial-gradient(circle at bottom left, var(--Yellow), var(--Orange), var(--Purple));
+    position: relative;
+
+}
+
+/* DEGRADÊ BACKGROUND SEGUNDA PARTE */
+
+.Container::before {
+
+    content: "";
+    position: absolute;
+    background-image: radial-gradient(circle at top left, var(--Blue), var(--Blue-Alpha), transparent);
+    width: 486px;
+    height: 486px;
+    border-radius: 35%;
+
+}
+
+/* WHITE INTERNO 1º QUADRADO */
+
+span {
+
+    width: 400px;
+    height: 400px;
+    border: 30px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 35%;
+
+}
+
+span::before, span::after {
+
+    content: "";
+    position: absolute;
+
+}
+
+/* WHITE INTERNO 2º CIRCULO */
+
+span::before {
+
+    width: 220px;
+    height: 220px;
+    border: 30px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+span::after {
+
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    right: 43px;
+    top: 45px;
+
+}
