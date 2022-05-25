@@ -1,0 +1,127 @@
+body {
+
+    background: #000000;
+
+}
+
+.Container {
+
+    width: 700px;
+    height: auto;
+    margin: 80px auto;
+    position: relative;
+    
+}
+
+.Circle {
+
+    width: 600px;
+    height: 600px;
+    border: solid 50px #ffffff;
+    border-radius: 50%;
+    top: 70px;
+    position: absolute;
+    z-index: 10;
+
+}
+
+.A-1 {
+
+    width: 100px;
+    height: 770px;
+    background: #ffffff;
+    transform: skewX(-25deg);
+    position: absolute;
+    left: 200px;
+    z-index: 20px;
+
+}
+
+.A-2 {
+
+    width: 100px;
+    height: 380px;
+    background: #ffffff;
+    position: absolute;
+    left: 400px;
+    z-index: 30;
+
+}
+
+.A-3 {
+
+    width: 190px;
+    height: 100px;
+    background: #ffffff;
+    position: absolute;
+    left: 210px;
+    top: 450px;
+    z-index: 40;    
+
+}
+
+.Arrow-Right {
+
+    width: 0;
+    height: 0;
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
+    border-left: 120px solid #ffffff;
+    left: 400px;
+    top: 410px;
+    position: absolute;
+    z-index: 50;
+
+}
+
+.Arrow-Down {
+
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 100px solid #ffffff;
+    left: 400px;
+    top: 380px;
+    position: absolute;
+    z-index: 60;
+
+}
+
+.Arrow-Left {
+
+    width: 0;
+    height: 0;
+    border-top: 80px solid transparent;
+    border-right: 100px solid #ffffff;
+    left: 400px;
+    top: 540px;
+    position: absolute;
+    z-index: 70;
+
+}
+
+.Black-Bar-1, .Black-Bar-2 {
+
+    width: 25px;
+    height: 80px;
+    background: #000000;
+    transform: skewX(-25deg);
+    position: absolute;
+
+}
+
+.Black-Bar-1 {
+
+    left: 158px;
+    top: 650px;
+    z-index: 80;
+
+}
+
+.Black-Bar-2 {
+
+    left: 72px;
+    top: 565px;
+    z-index: 90;
+
+}
