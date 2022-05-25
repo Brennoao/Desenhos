@@ -1,0 +1,188 @@
+*, *::before, *::after {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #303030;
+
+}
+
+.Container {
+
+    margin-top: 109px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+
+}
+
+.Hex {
+
+    width: 160px;
+    height: 115px;
+    background: #fff;
+    position: relative;
+
+}
+
+.Hex::before, .Hex::after {
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+
+}
+
+.Hex::before {
+
+    border-bottom: 57px solid white;
+    top: -56px;
+
+}
+
+.Hex::after {
+
+    border-top: 57px solid white;
+    bottom: -56px;
+
+}
+
+.Head .Hex {
+
+    position: absolute;
+    top: -120px;
+    transform: scale(.6) scaleY(.85);
+    filter: drop-shadow(0 20px #303030);
+
+}
+
+.Legs {
+
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: -200px;
+    left: -170px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Wrap {
+
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Wrap-Out {
+
+    width: 360px;
+    top: 30%;
+    left: 75px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Leg {
+
+    background: white;
+    width: 60px;
+    height: 140px;
+    position: relative;
+    transform: perspective(10px) rotateY(5deg) scale(.8) scaleY(1.2);
+
+}
+
+.Leg-Out {
+
+    background: #fff;
+    width: 60px;
+    height: 100px;
+    position: relative;
+    transform: perspective(10px) rotateY(5deg) scale(.8) scaleY(1.2);
+
+}
+
+.Leg:last-child {
+
+    transform: perspective(10px) rotateY(-5deg) rotateY(180deg) scale(.8) scaleY(1.2);
+
+}
+
+.Leg-Out:last-child {
+
+    transform: perspective(10px) rotateY(-5deg) rotateY(180deg) scale(.8) scaleY(1.2);
+
+}
+
+.Leg::before, .Leg::after{
+
+    content: "";
+    position: absolute;
+    
+}
+
+.Leg::before {
+
+    width: 32px;
+    height: 100px;
+    left: -1px;
+    top: 20px;
+    background: #303030;
+
+}
+
+.Leg-Out::before {
+
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 60px;
+    top: 20px;
+    left: -1px;
+    background: #303030;
+
+}
+
+.Leg::after {
+
+    background: #fff;
+    width: 20px;
+    height: 290px;
+    top: -25px;
+    z-index: -1;
+
+}
+
+.Leg-Out::after {
+
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 20px;
+    height: 360px;
+    top: -75px;
+    z-index: -1;
+
+}
