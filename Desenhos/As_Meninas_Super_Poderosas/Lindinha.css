@@ -1,0 +1,323 @@
+.Container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    justify-content: center;
+    margin: 40px;
+    
+}
+
+.Head {
+
+    width: 340px;
+    height: 210px;
+    background-color: #fccb8c;
+    border-radius: 50%;
+    border: 15px solid #000;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.Hair {
+
+    background-color: #fefe02;
+    position: absolute;
+    border: 10px solid #000;
+    border-radius: 50%;
+    z-index: 2;
+    
+}
+
+.Hair--Left {
+
+    width: 155px;
+    height: 104px;
+    top: -81px;
+
+}
+
+.Hair--Right {
+
+    width: 191px;
+    height: 145px;
+    top: -100px;
+    right: -29px;
+
+}
+
+
+.Eye {
+
+    background-color: #fff;
+    border-radius: 50%;
+    border: 6px solid #000;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.Eye--Left {
+
+    height: 155px;
+    width: 106px;
+    left: -20px;
+    top: -4px;
+
+}
+
+.Eye--Right {
+
+    height: 155px;
+    width: 192px;
+    right: -20px;
+    top: -4px;
+
+}
+
+.Mouth {
+
+    position: absolute;
+    top: 74%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 40px;
+    box-shadow: 0px 5px 0 1px #000;
+    border-radius: 50%;
+
+}
+
+.Cornea {
+
+    background-color: #659fcc;
+    border-radius: 50%;
+
+}
+
+.Cornea--Left {
+
+    height: 141px;
+    width: 120px;
+
+}
+
+.Cornea--Right {
+
+    height: 151px;
+    width: 160px;
+
+}
+
+.Pupila {
+
+    background-color: #000;
+    position: absolute;
+    top: 21px;
+    border-radius: 50%;
+
+}
+
+.Pupila--Left {
+
+    height: 97px;
+    width: 117px;
+
+}
+
+.Pupila--Left::before {
+
+    content: '';
+    width: 33px;
+    background: #fff;
+    height: 44px;
+    position: absolute;
+    top: 20px;
+    left: 48%;
+    z-index: 3;
+    border-radius: 50%;
+
+}
+
+.Pupila--Right {
+
+    height: 133px;
+    width: 136px;
+    top: 12px;
+    left: -10px;
+
+}
+
+.Pupila--Right::before {
+
+    content: '';
+    width: 50px;
+    background: #fff;
+    height: 50px;
+    position: absolute;
+    top: 34px;
+    left: 15%;
+    z-index: 3;
+    border-radius: 50%;
+
+}
+
+.Body {
+
+    width: 81px;
+    height: 199px;
+    border: 10px solid #000;
+    background-color: #659fcc;
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 71px;
+    z-index: 1;
+    left: 73px;
+
+}
+
+.Body::before {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    top: 80px;
+
+}
+
+.LeftLeg {
+
+    width: 34px;
+    border: 10px solid #000;
+    background-color: #fff;
+    height: 94px;
+    bottom: -114px;
+    position: absolute;
+    left: -10px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+
+}
+
+.LeftLeg::before {
+
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    bottom: -1px;
+    background-color: #000;
+
+}
+
+.LeftLeg::after {
+
+    content: '';
+    width: 30%;
+    position: absolute;
+    height: 20px;
+    bottom: 23px;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+
+}
+
+.RightLeg {
+
+    border: 10px solid #000;
+    position: absolute;
+    bottom: -44px;
+    right: -16px;
+    width: 37px;
+    background: #fff;
+    height: 69px;
+    border-radius: 29px;
+
+}
+
+.RightLeg::before {
+
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    bottom: 0;
+    background-color: #000;
+
+}
+
+.RightLeg::after {
+
+    content: '';
+    width: 30%;
+    position: absolute;
+    height: 20px;
+    bottom: 7px;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+
+}
+
+.Arm {
+
+    border: 10px solid #000;
+    background: #fccb8c;
+    width: 40px;
+    height: 80px;
+    position: absolute;
+
+}
+
+.Arm--Left {
+
+    top: -141px;
+    transform: rotate(71deg);
+    left: -119px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.Arm--Right {
+
+    top: 70px;
+    transform: rotate(3deg);
+    right: -118px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 60px;
+
+}
+
+.MoreHair {
+
+    content: '';
+    position: absolute;
+    background-color: #fefe02;
+    border: 15px solid #000;
+    border-radius: 50%;
+
+}
+
+.MoreHair--Left {
+
+    top: 40px;
+    left: 95px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.MoreHair--Right {
+
+    top: 40px;
+    left: 400px;
+    width: 90px;
+    height: 90px;
+
+}
