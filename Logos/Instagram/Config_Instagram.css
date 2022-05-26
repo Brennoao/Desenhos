@@ -1,0 +1,27 @@
+*, *::before, *::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --Yellow: #F9DC64;
+    --Orange: #FF553E;
+    --Purple: #B5008E;
+    --Blue: #3023AE;
+    --Blue-Alpha: #3023AE1f; 
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
