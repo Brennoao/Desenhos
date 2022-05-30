@@ -1,0 +1,68 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+body {
+
+    height: 100vh;
+    background: #000;
+
+}
+
+div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) perspective(250px) rotateY(-25deg);
+    height: 200px;
+    width: 250px;
+
+}
+
+div span {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95px;
+    width: 120px;
+    background: #03a9f4;
+
+}
+
+div span:nth-child(2) {
+
+    top: 0;
+    left: 52%;    
+
+}
+
+div span:nth-child(3) {
+
+    top: 53%;
+    left: 0%;    
+
+}
+
+div span:nth-child(4) {
+
+    top: 53%;
+    left: 52%;    
+
+}
+
+H5 {
+
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    top: 609px;
+    left: 855px;
+    position: relative;
+
+}
