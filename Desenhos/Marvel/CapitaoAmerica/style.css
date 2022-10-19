@@ -1,0 +1,101 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+        
+}
+
+/* CONFIG BODY */
+
+body {
+
+    margin: 0 auto;
+        
+}
+
+.Circle {
+
+    border-radius: 50%;
+    border: 3px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to right, var(--Color1), var(--Color2), var(--Color1));
+
+}
+
+#Circle1 {
+
+    width: 256px;
+    height: 256px;
+
+    --Color1: red;
+    --Color2: rgb(166, 0, 0);
+
+}
+
+#Circle2 {
+
+    width: 206px;
+    height: 206px;
+    
+    --Color1: #fff;
+    --Color2: rgb(206, 206, 206); 
+
+}
+
+#Circle3 {
+
+    width: 156px;
+    height: 156px;
+    
+    --Color1: red;
+    --Color2: rgb(166, 0, 0);
+
+}
+
+#Circle4 {
+
+    width: 106px;
+    height: 106px;
+    
+    --Color1: blue;
+    --Color2: rgb(0, 0, 220);
+
+}
+
+#Star {
+
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+    transform: rotate(180deg);
+}
+
+#Star:before {
+
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+    transform: rotate(70deg);
+    content: "";
+    left: -50px;
+    
+}
+
+#Star:after {
+
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+    transform: rotate(-70deg);
+    content: "";
+    left: -48.8px;
+    top: 0.1px;
+
+}
